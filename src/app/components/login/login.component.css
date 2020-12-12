@@ -1,0 +1,18 @@
+div {
+    border: 3px solid #802345;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+}
+
+.field {
+    width: 100%;
+}
+
+.mat-raised-button {
+    background-color: #802345;
+    color: white;
+}

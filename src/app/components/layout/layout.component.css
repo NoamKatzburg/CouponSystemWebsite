@@ -1,0 +1,26 @@
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #802345;
+    text-align: center;
+    /* font-weight: bold; */
+    border-top: 1px solid #802345;
+    color: white;
+    /* background-image: url("../../../assets/Pictures/dominik-scythe-yzX0GucnmtY-unsplash (2).jpg"); */
+}
+
+div {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'nav nav nav nav' 'main main main main' 'footer footer footer footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 83% 5%;
+    background-color: #e9bacb;
+}

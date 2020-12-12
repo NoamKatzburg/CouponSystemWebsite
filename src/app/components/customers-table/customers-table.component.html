@@ -1,0 +1,31 @@
+<div>
+    <ng-template #loading>
+        <img src="../../../assets/Pictures/loading3.gif" alt="loading..." width="250" />
+    </ng-template>
+
+    <table *ngIf="customers; else loading">
+        <tr>
+            <th>id</th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>email</th>
+            <th>password</th>
+            <th>coupons</th>
+            <th>edit</th>
+        </tr>
+        <tr *ngFor="let customer of customers">
+            <td>{{customer.id}}</td>
+            <td>{{customer.firstName}}</td>
+            <td>{{customer.lastName}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.password}}</td>
+            <td>Coupons: {{customer.coupons.length}}</td>
+            <td *ngIf="currentRoute">
+                <span class="material-icons">create </span>
+                <span class="material-icons">delete</span>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

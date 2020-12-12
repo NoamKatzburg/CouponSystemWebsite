@@ -1,0 +1,29 @@
+<div>
+    <ng-template #loading>
+        <img src="../../../assets/Pictures/loading3.gif" alt="loading..." width="250" />
+    </ng-template>
+
+    <table *ngIf="companies; else loading">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>coupons</th>
+            <th>edit</th>
+        </tr>
+        <tr *ngFor="let company of companies">
+            <td>{{company.id}}</td>
+            <td>{{company.name}}</td>
+            <td>{{company.email}}</td>
+            <td>{{company.password}}</td>
+            <td>Coupons: {{company.coupons.length}}</td>
+            <td *ngIf="currentRoute">
+                <span class="material-icons">create </span>
+                <span class="material-icons">delete</span>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

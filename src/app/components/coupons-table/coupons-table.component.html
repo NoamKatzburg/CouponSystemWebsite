@@ -1,0 +1,37 @@
+<div>
+    <ng-template #loading>
+        <img src="../../../assets/Pictures/loading3.gif" alt="loading..." width="250" />
+    </ng-template>
+
+    <table *ngIf="coupons; else loading">
+        <tr>
+            <th>companyId</th>
+            <th>categoryId</th>
+            <th>title</th>
+            <th>desc</th>
+            <th>startDate</th>
+            <th>endDate</th>
+            <th>amount</th>
+            <th>price</th>
+            <th>image</th>
+            <th>edit</th>
+        </tr>
+        <tr *ngFor="let coupon of coupons">
+            <td>{{coupon.companyId}}</td>
+            <td>{{coupon.categoryId}}</td>
+            <td>{{coupon.title}}</td>
+            <td>{{coupon.desc}}</td>
+            <td>{{coupon.startDate}}</td>
+            <td>{{coupon.endDate}}</td>
+            <td>{{coupon.amount}}</td>
+            <td>{{coupon.price}}</td>
+            <td>{{coupon.image}}</td>
+            <td *ngIf="currentRoute">
+                <span class="material-icons">create </span>
+                <span class="material-icons">delete</span>
+            </td>
+        </tr>
+
+    </table>
+
+</div>

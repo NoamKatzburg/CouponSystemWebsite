@@ -1,0 +1,28 @@
+        .example-spacer {
+            flex: 1 1 auto;
+        }
+        
+        div {
+            height: 70%;
+            margin: 0;
+            position: relative;
+            top: 50%;
+            transform: translateY(-75%);
+        }
+        
+        button {
+            margin: 5px;
+        }
+        
+        span:hover {
+            cursor: pointer;
+        }
+        
+        #toolbar {
+            height: 59px;
+        }
+        
+        .clientButton {
+            background-color: #802345;
+            color: white;
+        }

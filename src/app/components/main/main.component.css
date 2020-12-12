@@ -1,0 +1,14 @@
+div {
+    height: 100%;
+    background-image: url("../../../assets/Pictures/adam-solomon-WHUDOzd5IYU-unsplash.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+    margin: 0%;
+    padding-left: 50px;
+    padding-top: 50px;
+}

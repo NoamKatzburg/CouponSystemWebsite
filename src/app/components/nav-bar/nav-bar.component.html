@@ -1,0 +1,13 @@
+<div>
+    <mat-toolbar #toolbar>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>home</mat-icon>
+  </button>
+        <span routerLink="">Coupon System</span>
+        <span class="example-spacer"></span>
+        <button class="clientButton" mat-raised-button [routerLink]="['/admin']">Admin</button>
+        <button class="clientButton" mat-raised-button routerLink="company">Company</button>
+        <button class="clientButton" mat-raised-button routerLink="customer">Customer</button>
+        <button mat-raised-button color="warn" routerLink="login">Login</button>
+    </mat-toolbar>
+</div>
